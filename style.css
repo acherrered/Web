@@ -1,9 +1,9 @@
 
 
-body {
-padding: 0 5px 0 5px;
+/*body {
+padding: 0 0px 0 0px;
 
-}
+}*/
 
 
 .xbody {
@@ -35,20 +35,32 @@ overflow: hidden;
   -webkit-filter: none;
 }
 
-.cards{
-position: relative;
+.cards {
 margin-top: 50px;
-
+padding : 12px;
 }
 
-@media (max-width:769px) {
+
+@media (max-width:768px) {
     .panel-img  {
         
         min-width: 100%;
         max-height: 150px;
 object-fit: cover;
-        
+
     }
+
+    .img-fluid {
+
+      max-width: unset;
+      max-height: 600px;
+      object-fit: cover;
+    }
+
+    .xbody {
+margin : unset;
+width: 100%;
+}
 
 
 }
@@ -69,11 +81,14 @@ object-fit: cover;
         max-height: 600px;
         position: relative;
         
+}
+
+
       
     }
     
 
-}
+
 
 .col-css {
 
@@ -84,8 +99,8 @@ padding: 1px;
 
 .gallery {
 margin-top: 15px;
-position: sticky;
-
+position: relative;
+overflow: hidden;
 }
 
 .img-wrapper{
@@ -102,7 +117,3 @@ height: 500px;
 }
 
 
-.imgslider {
-  width: 100%;
-
-}
