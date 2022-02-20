@@ -43,6 +43,12 @@ padding : 12px;
 position: relative;
 }
 
+.cards .row>* {
+
+padding-right: 0px;
+    padding-left: 0px;
+
+}
 
 @media (max-width:768px) {
     .panel-img  {
@@ -153,9 +159,7 @@ pointer-events: auto;
 
 }
 
-
-      
-    }
+}
     
 
 .col-css {
