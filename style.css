@@ -161,6 +161,23 @@ pointer-events: auto;
 
 }
     
+.button-adherer {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+height: 60px;
+width: 100%;
+background: rgba(106, 214, 89, 0.4);
+}
+
+.button-adherer .btn & .btn{
+position: absolute;
+height: 40px;
+
+
+
+}
 
 .col-css {
 
@@ -173,7 +190,9 @@ padding: 1px;
 margin-top: 15px;
 position: relative;
 overflow: hidden;
+padding: 15px;
 }
+
 
 .img-wrapper{
 
