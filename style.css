@@ -171,13 +171,21 @@ width: 100%;
 background: rgba(106, 214, 89, 0.4);
 }
 
-.button-adherer .btn & .btn{
+.button-adherer .btn & .btn & .button-voir-articles{
 position: absolute;
 height: 40px;
-
-
-
 }
+
+.button-voir-articles {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+height: 60px;
+width: 100%;
+background: rgba(106, 214, 89, 0.4);
+bottom: 10px;
+}      
 
 .col-css {
 
