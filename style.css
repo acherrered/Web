@@ -207,3 +207,27 @@ height: 500px;
 }
 
 
+.imgslider {
+max-width: 100%;
+width: 100%;
+}
+
+
+@media (min-width:769px){
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  overflow: hidden;  
+}
+    .article-cards {
+        height: 300px;
+      }
+}
+      
+    .img-article{
+width: 100%;
+height: 100%;
+object-fit: cover;
+      
+    }
+
