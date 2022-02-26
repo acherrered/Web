@@ -184,7 +184,8 @@ position: relative;
 height: 60px;
 width: 100%;
 background: rgba(106, 214, 89, 0.4);
-bottom: 10px;
+bottom: 12px;
+margin-bottom : -12px;
 }      
 
 .col-css {
@@ -239,3 +240,83 @@ object-fit: cover;
       
     }
 
+.stats{
+position: relative;
+display: flex;
+height: auto;
+min-width: 100%;
+min-height: 300px;
+margin-top: 50px;
+  }
+
+.icons-stats{
+font-size: 60px;
+color: white;  
+}
+
+div.stats > div {
+padding: 30px;
+background-image: url("img/slider-forests.jpg");
+  min-height : 400px;
+  min-width : 100%;
+  align-items: center;
+  margin-left: 0px;
+position: relative;
+      }
+  .inside-stats{
+display: inline-block;
+    
+  }
+
+.text-number-stats{
+font-size : 50px;
+font-weight: bold;
+color: white;    
+}
+
+.text-stats{
+
+font-size : 20px;
+font-weight: bold;
+color: white;
+
+}
+
+.btn-stats {
+background: orange;
+min-width: 300;
+height: 100px;
+color: white;
+border: 0px;
+display: inline-flex;
+align-items: center;
+gap: 10px;
+padding: 20px;
+border-radius: 5px;
+}
+
+.btn-stats:hover {
+
+background: blue;
+
+}
+  
+ .btn-stats-icon {
+
+font-size : 50px;
+font-weight: bold;
+}
+      
+.text-btn-stats{
+
+font-size : 20px;
+font-weight: bold;
+
+}
+
+@media (max-width:576px) {
+.btn-stats & .btn-stats-icon {
+  margin-top: 20px
+}
+
+}
