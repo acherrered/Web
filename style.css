@@ -245,7 +245,7 @@ position: relative;
 display: flex;
 height: auto;
 min-width: 100%;
-min-height: 300px;
+min-height: 500px;
 margin-top: 50px;
   }
 
@@ -257,16 +257,15 @@ color: white;
 div.stats > div {
 padding: 30px;
 background-image: url("img/slider-forests.jpg");
-  min-height : 400px;
-  min-width : 100%;
-  align-items: center;
-  margin-left: 0px;
+background-repeat: no-repeat;
+background-size:cover;
+min-height : 400px;
+min-width : 100%;
+align-items: center;
+margin-left: 0px;
 position: relative;
       }
-  .inside-stats{
-display: inline-block;
-    
-  }
+
 
 .text-number-stats{
 font-size : 50px;
@@ -297,7 +296,7 @@ border-radius: 5px;
 
 .btn-stats:hover {
 
-background: blue;
+background: green;
 
 }
   
@@ -315,8 +314,8 @@ font-weight: bold;
 }
 
 @media (max-width:576px) {
-.btn-stats & .btn-stats-icon {
-  margin-top: 20px
+.stats .row [class*="col-"] {
+  margin-top: 30px
 }
 
 }
