@@ -66,7 +66,7 @@ object-fit: cover;
     }
 
     .panel{
-margin-top : 10px;
+margin-top : 50px;
 
     }
 
@@ -168,6 +168,7 @@ align-items: center;
 position: relative;
 height: 60px;
 width: 100%;
+padding: 15px;
 background: rgba(106, 214, 89, 0.4);
 }
 
@@ -176,6 +177,9 @@ position: absolute;
 height: 40px;
 }
 
+      
+
+
 .button-voir-articles {
 display: flex;
 justify-content: center;
@@ -183,9 +187,11 @@ align-items: center;
 position: relative;
 height: 60px;
 width: 100%;
-background: rgba(106, 214, 89, 0.4);
+/*background: rgba(106, 214, 89, 0.4);*/
+margin-top: 20px;
 bottom: 12px;
 margin-bottom : -12px;
+padding: 0px 20px 0px 20px; 
 }      
 
 .col-css {
@@ -196,10 +202,10 @@ padding: 1px;
 
 
 .gallery {
-margin-top: 15px;
+margin-top: 100px;
 position: relative;
 overflow: hidden;
-padding: 15px;
+padding: 0px;
 }
 
 
@@ -247,6 +253,7 @@ height: auto;
 min-width: 100%;
 min-height: 500px;
 margin-top: 50px;
+overflow: hidden;
   }
 
 .icons-stats{
@@ -316,6 +323,11 @@ font-weight: bold;
 @media (max-width:576px) {
 .stats .row [class*="col-"] {
   margin-top: 30px
+}
+
+.btn{
+
+  width: 100%;
 }
 
 }
