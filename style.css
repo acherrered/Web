@@ -290,7 +290,6 @@ color: white;
 
 .btn-stats {
 background: orange;
-min-width: 300;
 height: 100px;
 color: white;
 border: 0px;
@@ -299,12 +298,14 @@ align-items: center;
 gap: 10px;
 padding: 20px;
 border-radius: 5px;
+text-decoration: none;
+
 }
 
 .btn-stats:hover {
 
 background: green;
-
+color: white;
 }
   
  .btn-stats-icon {
@@ -329,5 +330,92 @@ font-weight: bold;
 
   width: 100%;
 }
-
 }
+.btn {
+  
+background-color: green;
+}
+
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.page-message-ok{
+
+ min-height: 500px;
+display: flex;
+align-items: center;
+  
+}
+
+      
+.message-ok{
+
+  font-size: 50px;
+  font-weight: bold;
+  color: green;
+  
+}
+
+.message-ko{
+
+  font-size: 50px;
+  font-weight: bold;
+  color: orange;
+  
+}
+
+.icon-sucess {
+
+  font-size: 100px;
+  font-weight: bold;
+  color: green;
+}
+      
+.icon-error {
+
+  font-size: 100px;
+  font-weight: bold;
+  color: orange;
+}
+
+
+      
+
+.titres{
+  
+  font-weight: 400;
+  color: green;
+}
+
+.ressayer {
+
+font-size: 30px;
+color: orange;
+text-decoration: none;
+color: inherit;
+}
+
+.ressayer:hover {
+
+color: green;
+}
+
+footer {
+
+  margin-top: 100px;
+}
+
+ .article-type {
+   margin-top: 50px;
+ }     
