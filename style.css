@@ -15,11 +15,24 @@ max-width: 1366px ;
 
 .slider {
 
-top: 10px;
+/*top: 10px;*/
 position: relative;
 }
 
+@media (min-width: 0px){}
+.d-md-block {
+    display: block!important;
+}
+}
 
+a{
+color: white;
+}
+
+a:hover{
+  text-decoration: none;
+color: inherit;
+}
 .textpanel {
 position: absolute;
 color: white;
@@ -225,8 +238,16 @@ height: 500px;
 .imgslider {
 max-width: 100%;
 width: 100%;
+max-height: 350px;
+object-fit: cover;
 }
 
+@media (max-width:576px) {
+.imgslider {
+min-height: 400px;
+
+}
+}
 
 @media (min-width:769px){
 .card-horizontal {
@@ -326,11 +347,12 @@ font-weight: bold;
   margin-top: 30px
 }
 
-.btn{
+.btn:not(footer .btn){
 
   width: 100%;
 }
 }
+  
 .btn {
   
 background-color: green;
@@ -389,8 +411,7 @@ align-items: center;
   color: orange;
 }
 
-
-      
+    
 
 .titres{
   
@@ -416,6 +437,19 @@ footer {
   margin-top: 100px;
 }
 
- .article-type {
+.footer-bar {
+color: white;
+background-color: green;
+}
+
+ .text-footer{
+color: white;
+   
+ }
+
+.article-type {
+   position: reative;
    margin-top: 50px;
+   width: 100%;
  }     
+
