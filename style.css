@@ -1,35 +1,134 @@
 
-
-/*body {
-padding: 0 0px 0 0px;
-
-}*/
-
-
 .xbody {
 margin : auto;
 position: relative;
 max-width: 1366px ;
-
+width: 100%;
 }
 
-.slider {
+.btn {
+background-color: green;
+}  
+  
+  
+/* Début - navbar*/
+  
+@media (min-width:992px) {
+.navbar-nav {
+position:absolute;
+right:10px;
+}
+}
 
-top: 10px;
+  
+.titres {
+font-weight: 400;
+color: green;
+}
+
+/* Fin - navbar*/
+
+
+/*Pour afficher le text du slider en mobile*/ 
+@media (min-width: 0px){  
+.d-md-block {
+display: block!important;
+}
+}
+
+
+/* Début  -  Panel (Plantation/Entretien/Maniféstations/Sensibilisation)*/
+  
+.textpanel {  
+position: absolute;
+color: white;
+}
+
+@media (max-width:768px) {
+.panel-img  {
+min-width: 100%;
+max-height: 250px;
+object-fit: cover;
+}
+.img-fluid { /* Agrandir l'affichage du slider sur mobile */
+max-width: unset;
+max-height: 600px;
+object-fit: cover;
+}
+}
+
+
+
+.panel {
+margin-top : 50px;
+}
+
+.vignette-panel {
+background: rgba(174, 160, 167, 0.6);
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 100%;
+height: 50px;
+}
+
+
+@media (min-width:769px) {
+.panel-img {
+min-width: 100%;
+max-height: 600px;
+position: relative;
+}
+}
+
+.panel {
+margin-top: 30px;
+position: relative;
+overflow: hidden;
+}
+
+.panel-img {
+-webkit-filter: grayscale(1);
 position: relative;
 }
 
-
-.textpanel {
-position: absolute;
-color: white;
-/*left: 5%;
-right: 0px;*/
+.panel-img:hover {
+filter: none;
+-webkit-filter: none;
 }
 
+sibling:hover .panel-img {
+filter: none;
+-webkit-filter: none;
+}
+    
+.button-adherer {
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+height: 60px;
+width: 100%;
+padding: 15px;
+background: rgba(106, 214, 89, 0.4);
+}
+
+.sibling {
+position: relative;
+align-items: end;
+display: flex;
+}
+
+.col-css {
+padding: 1px;
+}
+/* Fin -  Panel (Plantation/Entretien/Maniféstations/Sensibilisation)*/
+
+
+/* Début - Cartes d'articles */
 
 .titre-card {
-
 align-items: center;
 justify-content: center;
 display: flex;
@@ -44,190 +143,256 @@ position: relative;
 }
 
 .cards .row>* {
-
 padding-right: 0px;
-    padding-left: 0px;
-
+padding-left: 0px;
 }
 
-@media (max-width:768px) {
-    .panel-img  {
-        
-min-width: 100%;
-max-height: 250px;
-object-fit: cover;
-    }
-
-    .img-fluid {
-
-      max-width: unset;
-      max-height: 600px;
-      object-fit: cover;
-    }
-
-    .panel{
-margin-top : 10px;
-
-    }
-
-.background-color{
-background: rgba(174, 160, 167, 0.6);
-display: flex;
-justify-content: center;
-align-items: center;
+.button-adherer .btn & .btn & .button-voir-articles {
 position: absolute;
-width: 100%;
-height: 50px;
+height: 40px;
 }
 
-.sibling{
-  position: relative;
-align-items: end;
-display: flex;
-
-
-
-}
-    }
-
-
-
-    .xbody {
-margin : auto;
-width: 100%;
-}
-
-
-
-
-@media (min-width:992px){
-
-    .navbar-nav {
-	position:absolute;
-	right:10px;
-}
-
-}
-
-
-@media (min-width:769px) {
-    .panel-img {
-        min-width: 100%;
-        max-height: 600px;
-        position: relative;
-        
-}
-
-
-.panel {
-margin-top: 30px;
-position: relative;
-overflow: hidden;
-
-}
-
-.panel-img{
-
--webkit-filter: grayscale(1);
-position: relative;
-
-
-}
-
-
-.background-color {
-background: rgba(174, 160, 167, 0.6);
-position: absolute;
-bottom: 1px;
-width: 25%;
-height: 100px;
-display: flex;
-justify-content: center;
-align-items: center;
-pointer-events: auto;
-}
-
-.panel-img:hover {
-  filter: none;
-  -webkit-filter: none;
-}
-
- sibling:hover .panel-img {
-
-  filter: none;
- -webkit-filter: none;
-
-}
-
-}
-    
-.button-adherer {
+.button-voir-articles {
 display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
 height: 60px;
 width: 100%;
-background: rgba(106, 214, 89, 0.4);
-}
-
-.button-adherer .btn & .btn{
-position: absolute;
-height: 40px;
-
-
-
-}
-
-.col-css {
-
-padding: 1px;
-
-}
-
-
-.gallery {
-margin-top: 15px;
-position: relative;
-overflow: hidden;
-padding: 15px;
-}
-
-
-.img-wrapper{
-
-width: 300px;
-height: 500px;
-
-}
+margin-top: 20px;
+bottom: 12px;
+margin-bottom : -12px;
+padding: 0px 20px 0px 20px; 
+}      
 
 .cardsgroup {
-
-  margin-top: 20px;
+margin-top: 20px;
 }
 
+
+@media (min-width:769px){ /* inverser les cartes dans la page des acticles */
+.card-horizontal {
+display: flex;
+flex: 1 1 auto;
+overflow: hidden;  
+}
+.article-cards {
+height: 300px;
+}
+
+}  
+
+      
+.img-article{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Fin  -  Cartes d'articles  */
+
+.gallery {
+margin-top: 100px;
+position: relative;
+overflow: hidden;
+padding: 0px;
+}
+
+/*.img-wrapper {
+width: 300px;
+height: 500px;
+}*/
+
+/* Début - slider des pages d'articles */
 
 .imgslider {
 max-width: 100%;
 width: 100%;
-}
-
-
-@media (min-width:769px){
-.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-  overflow: hidden;  
-}
-    .article-cards {
-        height: 300px;
-      }
-}
-      
-    .img-article{
-width: 100%;
-height: 100%;
+max-height: 350px;
 object-fit: cover;
+}
+
+@media (max-width:576px) {
+.imgslider {
+min-height: 400px;
+}
+.btn:not(footer .btn) {
+width: 100%;
+}  
+}
+
+/* Fin - slider des pages d'articles */
+
+
+
+/* Début - slider des statistiques de l'association */
+.stats {
+position: relative;
+display: flex;
+height: auto;
+min-width: 100%;
+min-height: 500px;
+margin-top: 50px;
+overflow: hidden;
+}
+
+.icons-stats {
+font-size: 60px;
+color: white;  
+}
+
+div.stats > div {
+padding: 30px;
+background-image: url("img/slider-forests.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+min-height : 400px;
+min-width : 100%;
+align-items: center;
+margin-left: 0px;
+position: relative;
+}
+
+.text-number-stats {
+font-size : 50px;
+font-weight: bold;
+color: white;    
+}
+
+.text-stats {
+font-size : 20px;
+font-weight: bold;
+color: white;
+}
+
+.btn-stats {
+background: orange;
+height: 100px;
+color: white;
+border: 0px;
+display: inline-flex;
+align-items: center;
+gap: 10px;
+padding: 20px;
+border-radius: 5px;
+text-decoration: none;
+}
+
+.btn-stats:hover {
+background: green;
+color: white;
+}
+  
+.btn-stats-icon {
+font-size : 50px;
+font-weight: bold;
+}
       
-    }
+.text-btn-stats {
+font-size : 20px;
+font-weight: bold;
+}
+
+@media (max-width:576px) {
+.stats .row [class*="col-"] {
+margin-top: 30px
+}
+}
+/* Fin - slider des statistiques de l'association */
+  
+
+
+  
+/* Début - page contact */
+
+.map-container-6 {
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+  
+.map-container-6 iframe {
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.page-message-ok {
+min-height: 500px;
+display: flex;
+align-items: center;
+  
+}
+      
+.message-ok{
+font-size: 50px;
+font-weight: bold;
+color: green;
+  
+}
+
+.message-ko {
+font-size: 50px;
+font-weight: bold;
+color: orange;
+}
+
+.icon-sucess {
+font-size: 100px;
+font-weight: bold;
+color: green;
+}
+      
+.icon-error {
+font-size: 100px;
+font-weight: bold;
+color: orange;
+}
+
+.ressayer {
+font-size: 30px;
+color: orange;
+text-decoration: none;
+color: inherit;
+}
+
+.ressayer:hover {
+color: green;
+}
+
+
+
+  
+/* Fin - page contact */
+
+
+  
+
+/* Début - footer */
+
+footer {
+margin-top: 100px;
+}
+
+.footer-bar {
+color: white;
+background-color: green;
+}
+
+.text-footer {
+color: white;
+}
+
+/* Fin - footer */
+
+  
+
+.article-type { /* Article type - lorem ipsum*/
+position: reative;
+margin-top: 50px;
+width: 100%;
+ }     
 
