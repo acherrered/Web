@@ -213,7 +213,7 @@ object-fit: cover;
 }
 
 @media (max-width:576px) {
-.imgslider {
+.imgslider:not(.event-pic .imgslider) {
 min-height: 400px;
 }
 .btn:not(footer .btn) {
@@ -224,6 +224,82 @@ width: 100%;
 /* Fin - slider des pages d'articles */
 
 
+/* Début - page événements*/
+
+.event-card{
+margin-top: 30px;
+  
+}
+
+.event-pic {
+
+  height: 300px;
+  width: 100%;
+  background: lightgreen;
+  display: flex;
+  justify-content:flex-end;
+}
+
+ .event-content{
+  height: 300px;
+  width: 100%;
+  background: lightgray;
+  padding: 2% 2% 8% 2%;
+
+ }
+
+span:before{
+    content:" "; 
+    display:inline-block; 
+    width:32px;
+}
+
+.event-block {
+display: inline-block;
+text-align: center;  
+
+  
+}
+
+.title-event{
+  position: relative;
+  display: inline-block;
+text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.discription-event{
+
+position: relative;
+  
+}
+.event-card [class*="col"]{
+  padding: 1px;
+}
+
+.date-event {
+height: 50px;
+width: 50px;
+background: green;
+margin: 15px 15px 0px 0px;
+color: white;
+position: absolute;
+  
+}
+
+@media (max-width:576px) {
+.row.reverse {
+display: flex;
+flex-flow: column-reverse;
+  
+}
+}
+
+
+/* Fin - page événements*/
+
+  
 
 /* Début - slider des statistiques de l'association */
 .stats {
@@ -362,9 +438,6 @@ color: inherit;
 .ressayer:hover {
 color: green;
 }
-
-
-
   
 /* Fin - page contact */
 
