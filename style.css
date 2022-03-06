@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body {
+font-family: 'Muli', sans-serif;
+color: rgba(0, 0, 0, 0.8);
+font-weight: 400;
+line-height: 1.58;
+letter-spacing: -.003em;
+font-size: 20px;
+}
+
+h1 {
+font-family: 'Quicksand', sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 38px;
+line-height: 1.15;
+letter-spacing: -.02em;
+color: rgba(0, 0, 0, 0.8);
+-webkit-font-smoothing: antialiased;
+}
 
 .xbody {
 margin : auto;
@@ -136,6 +157,22 @@ margin-top: 50px;
 position: relative;
 }
 
+.titre-img-slider{
+align-items: center;
+justify-content: center;
+display: flex;
+position: relative;
+}
+  
+.titre-img-slider h1{
+position: absolute;
+color: white;
+font-size: 70px;
+font-weight: 700;
+  
+}
+
+
 .cards {
 margin-top: 50px;
 padding : 12px;
@@ -181,7 +218,6 @@ height: 300px;
 }
 
 }  
-
       
 .img-article{
 width: 100%;
@@ -198,14 +234,10 @@ overflow: hidden;
 padding: 0px;
 }
 
-/*.img-wrapper {
-width: 300px;
-height: 500px;
-}*/
 
 /* Début - slider des pages d'articles */
 
-.imgslider {
+.imgslider{
 max-width: 100%;
 width: 100%;
 max-height: 350px;
@@ -228,54 +260,56 @@ width: 100%;
 
 .event-card{
 margin-top: 30px;
+box-shadow: 5px 5px 5px lightgray;
+}
+
+#events-pos{
+margin-top: 60px;
+position: relative;
+}
   
-}
-
 .event-pic {
-
-  height: 300px;
-  width: 100%;
-  background: lightgreen;
-  display: flex;
-  justify-content:flex-end;
+height: 300px;
+width: 100%;
+background: lightgreen;
+display: flex;
+justify-content:flex-end;
 }
 
- .event-content{
-  height: 300px;
-  width: 100%;
-  background: lightgray;
-  padding: 2% 2% 8% 2%;
-
- }
+.event-content{
+height: 300px;
+width: 100%;
+background: #F8F9FA;
+padding: 2% 2% 8% 2%;
+}
 
 span:before{
-    content:" "; 
-    display:inline-block; 
-    width:32px;
+content:" "; 
+display:inline-block; 
+width:15px;
 }
 
 .event-block {
 display: inline-block;
 text-align: center;  
-
-  
 }
 
-.title-event{
-  position: relative;
-  display: inline-block;
+.title-event, h2.card-title{
+position: relative;
+display: inline-block;
 text-align: center;
-  font-weight: 700;
-  font-size: 30px;
+font-weight: 700;
+font-size: 30px;
 }
+
+
 
 .discription-event{
-
 position: relative;
-  
 }
+  
 .event-card [class*="col"]{
-  padding: 1px;
+padding: 1px;
 }
 
 .date-event {
@@ -285,17 +319,16 @@ background: green;
 margin: 15px 15px 0px 0px;
 color: white;
 position: absolute;
-  
+font-size: 80%;
+padding: 1px;
 }
 
 @media (max-width:576px) {
 .row.reverse {
 display: flex;
 flex-flow: column-reverse;
-  
 }
 }
-
 
 /* Fin - page événements*/
 
@@ -377,8 +410,7 @@ margin-top: 30px
 /* Fin - slider des statistiques de l'association */
   
 
-
-  
+ 
 /* Début - page contact */
 
 .map-container-6 {
@@ -400,14 +432,12 @@ position:absolute;
 min-height: 500px;
 display: flex;
 align-items: center;
-  
 }
       
 .message-ok{
 font-size: 50px;
 font-weight: bold;
 color: green;
-  
 }
 
 .message-ko {
@@ -441,7 +471,6 @@ color: green;
   
 /* Fin - page contact */
 
-
   
 
 /* Début - footer */
@@ -467,5 +496,8 @@ color: white;
 position: reative;
 margin-top: 50px;
 width: 100%;
- }     
+}     
 
+.icons-sm { /* couleurs icones page contact + events*/
+color: green;
+}
