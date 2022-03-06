@@ -1,503 +1,484 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 body {
-font-family: 'Muli', sans-serif;
-color: rgba(0, 0, 0, 0.8);
-font-weight: 400;
-line-height: 1.58;
-letter-spacing: -.003em;
-font-size: 20px;
+    font-family: "Muli", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    line-height: 1.58;
+    letter-spacing: -0.003em;
+    font-size: 20px;
 }
 
 h1 {
-font-family: 'Quicksand', sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 38px;
-line-height: 1.15;
-letter-spacing: -.02em;
-color: rgba(0, 0, 0, 0.8);
--webkit-font-smoothing: antialiased;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-font-smoothing: antialiased;
 }
 
 .xbody {
-margin : auto;
-position: relative;
-max-width: 1366px ;
-width: 100%;
+    margin: auto;
+    position: relative;
+    max-width: 1366px;
+    width: 100%;
 }
 
 .btn {
-background-color: green;
-}  
-  
-  
-/* Début - navbar*/
-  
-@media (min-width:992px) {
-.navbar-nav {
-position:absolute;
-right:10px;
-}
+    background-color: green;
 }
 
-  
+/* Début - navbar*/
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        position: absolute;
+        right: 10px;
+    }
+}
+
 .titres {
-font-weight: 400;
-color: green;
+    font-weight: 400;
+    color: green;
 }
 
 /* Fin - navbar*/
 
-
-/*Pour afficher le text du slider en mobile*/ 
-@media (min-width: 0px){  
-.d-md-block {
-display: block!important;
+/*Pour afficher le text du slider en mobile*/
+@media (min-width: 0px) {
+    .d-md-block {
+        display: block !important;
+    }
 }
-}
-
 
 /* Début  -  Panel (Plantation/Entretien/Maniféstations/Sensibilisation)*/
-  
-.textpanel {  
-position: absolute;
-color: white;
+
+.textpanel {
+    position: absolute;
+    color: white;
 }
 
-@media (max-width:768px) {
-.panel-img  {
-min-width: 100%;
-max-height: 250px;
-object-fit: cover;
+@media (max-width: 768px) {
+    .panel-img {
+        min-width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+    .img-fluid {
+        /* Agrandir l'affichage du slider sur mobile */
+        max-width: unset;
+        max-height: 600px;
+        object-fit: cover;
+    }
 }
-.img-fluid { /* Agrandir l'affichage du slider sur mobile */
-max-width: unset;
-max-height: 600px;
-object-fit: cover;
-}
-}
-
-
 
 .panel {
-margin-top : 50px;
+    margin-top: 50px;
 }
 
 .vignette-panel {
-background: rgba(174, 160, 167, 0.6);
-display: flex;
-justify-content: center;
-align-items: center;
-position: absolute;
-width: 100%;
-height: 50px;
+    background: rgba(174, 160, 167, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 50px;
 }
 
-
-@media (min-width:769px) {
-.panel-img {
-min-width: 100%;
-max-height: 600px;
-position: relative;
-}
+@media (min-width: 769px) {
+    .panel-img {
+        min-width: 100%;
+        max-height: 600px;
+        position: relative;
+    }
 }
 
 .panel {
-margin-top: 30px;
-position: relative;
-overflow: hidden;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
 }
 
 .panel-img {
--webkit-filter: grayscale(1);
-position: relative;
+    -webkit-filter: grayscale(1);
+    position: relative;
 }
 
 .panel-img:hover {
-filter: none;
--webkit-filter: none;
+    filter: none;
+    -webkit-filter: none;
 }
 
 sibling:hover .panel-img {
-filter: none;
--webkit-filter: none;
+    filter: none;
+    -webkit-filter: none;
 }
-    
+
 .button-adherer {
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-height: 60px;
-width: 100%;
-padding: 15px;
-background: rgba(106, 214, 89, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    padding: 15px;
+    background: rgba(106, 214, 89, 0.4);
 }
 
 .sibling {
-position: relative;
-align-items: end;
-display: flex;
+    position: relative;
+    align-items: end;
+    display: flex;
 }
 
 .col-css {
-padding: 1px;
+    padding: 1px;
 }
 /* Fin -  Panel (Plantation/Entretien/Maniféstations/Sensibilisation)*/
-
 
 /* Début - Cartes d'articles */
 
 .titre-card {
-align-items: center;
-justify-content: center;
-display: flex;
-margin-top: 50px;
-position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
 }
 
-.titre-img-slider{
-align-items: center;
-justify-content: center;
-display: flex;
-position: relative;
-}
-  
-.titre-img-slider h1{
-position: absolute;
-color: white;
-font-size: 70px;
-font-weight: 700;
-  
+.titre-img-slider {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
 }
 
+.titre-img-slider h1 {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
 
 .cards {
-margin-top: 50px;
-padding : 12px;
-position: relative;
+    margin-top: 50px;
+    padding: 12px;
+    position: relative;
 }
 
-.cards .row>* {
-padding-right: 0px;
-padding-left: 0px;
+.cards .row > * {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .button-adherer .btn & .btn & .button-voir-articles {
-position: absolute;
-height: 40px;
+    position: absolute;
+    height: 40px;
 }
 
 .button-voir-articles {
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-height: 60px;
-width: 100%;
-margin-top: 20px;
-bottom: 12px;
-margin-bottom : -12px;
-padding: 0px 20px 0px 20px; 
-}      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+    bottom: 12px;
+    margin-bottom: -12px;
+    padding: 0px 20px 0px 20px;
+}
 
 .cardsgroup {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
-
-@media (min-width:769px){ /* inverser les cartes dans la page des acticles */
-.card-horizontal {
-display: flex;
-flex: 1 1 auto;
-overflow: hidden;  
+@media (min-width: 769px) {
+    /* inverser les cartes dans la page des acticles */
+    .card-horizontal {
+        display: flex;
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+    .article-cards {
+        height: 300px;
+    }
 }
-.article-cards {
-height: 300px;
-}
 
-}  
-      
-.img-article{
-width: 100%;
-height: 100%;
-object-fit: cover;
+.img-article {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Fin  -  Cartes d'articles  */
 
 .gallery {
-margin-top: 100px;
-position: relative;
-overflow: hidden;
-padding: 0px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
 }
-
 
 /* Début - slider des pages d'articles */
 
-.imgslider{
-max-width: 100%;
-width: 100%;
-max-height: 350px;
-object-fit: cover;
+.imgslider {
+    max-width: 100%;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
 }
 
-@media (max-width:576px) {
-.imgslider:not(.event-pic .imgslider) {
-min-height: 400px;
-}
-.btn:not(footer .btn) {
-width: 100%;
-}  
+@media (max-width: 576px) {
+    .imgslider:not(.event-pic .imgslider) {
+        min-height: 400px;
+    }
+    .btn:not(footer .btn) {
+        width: 100%;
+    }
 }
 
 /* Fin - slider des pages d'articles */
 
-
 /* Début - page événements*/
 
-.event-card{
-margin-top: 30px;
-box-shadow: 5px 5px 5px lightgray;
+.event-card {
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
-#events-pos{
-margin-top: 60px;
-position: relative;
+#events-pos {
+    margin-top: 60px;
+    position: relative;
 }
-  
+
 .event-pic {
-height: 300px;
-width: 100%;
-background: lightgreen;
-display: flex;
-justify-content:flex-end;
+    height: 300px;
+    width: 100%;
+    background: lightgreen;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.event-content{
-height: 300px;
-width: 100%;
-background: #F8F9FA;
-padding: 2% 2% 8% 2%;
+.event-content {
+    height: 300px;
+    width: 100%;
+    background: #f8f9fa;
+    padding: 2% 2% 8% 2%;
 }
 
-span:before{
-content:" "; 
-display:inline-block; 
-width:15px;
+span:before {
+    content: " ";
+    display: inline-block;
+    width: 15px;
 }
 
 .event-block {
-display: inline-block;
-text-align: center;  
+    display: inline-block;
+    text-align: center;
 }
 
-.title-event, h2.card-title{
-position: relative;
-display: inline-block;
-text-align: center;
-font-weight: 700;
-font-size: 30px;
+.title-event,
+h2.card-title {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
 }
 
-
-
-.discription-event{
-position: relative;
+.discription-event {
+    position: relative;
 }
-  
-.event-card [class*="col"]{
-padding: 1px;
+
+.event-card [class*="col"] {
+    padding: 1px;
 }
 
 .date-event {
-height: 50px;
-width: 50px;
-background: green;
-margin: 15px 15px 0px 0px;
-color: white;
-position: absolute;
-font-size: 80%;
-padding: 1px;
+    height: 50px;
+    width: 50px;
+    background: green;
+    margin: 15px 15px 0px 0px;
+    color: white;
+    position: absolute;
+    font-size: 80%;
+    padding: 1px;
 }
 
-@media (max-width:576px) {
-.row.reverse {
-display: flex;
-flex-flow: column-reverse;
-}
+@media (max-width: 576px) {
+    .row.reverse {
+        display: flex;
+        flex-flow: column-reverse;
+    }
 }
 
 /* Fin - page événements*/
 
-  
-
 /* Début - slider des statistiques de l'association */
 .stats {
-position: relative;
-display: flex;
-height: auto;
-min-width: 100%;
-min-height: 500px;
-margin-top: 50px;
-overflow: hidden;
+    position: relative;
+    display: flex;
+    height: auto;
+    min-width: 100%;
+    min-height: 500px;
+    margin-top: 50px;
+    overflow: hidden;
 }
 
 .icons-stats {
-font-size: 60px;
-color: white;  
+    font-size: 60px;
+    color: white;
 }
 
 div.stats > div {
-padding: 30px;
-background-image: url("img/slider-forests.jpg");
-background-repeat: no-repeat;
-background-size:cover;
-min-height : 400px;
-min-width : 100%;
-align-items: center;
-margin-left: 0px;
-position: relative;
+    padding: 30px;
+    background-image: url("img/slider-forests.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    min-width: 100%;
+    align-items: center;
+    margin-left: 0px;
+    position: relative;
 }
 
 .text-number-stats {
-font-size : 50px;
-font-weight: bold;
-color: white;    
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
 }
 
 .text-stats {
-font-size : 20px;
-font-weight: bold;
-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 .btn-stats {
-background: orange;
-height: 100px;
-color: white;
-border: 0px;
-display: inline-flex;
-align-items: center;
-gap: 10px;
-padding: 20px;
-border-radius: 5px;
-text-decoration: none;
+    background: orange;
+    height: 100px;
+    color: white;
+    border: 0px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .btn-stats:hover {
-background: green;
-color: white;
-}
-  
-.btn-stats-icon {
-font-size : 50px;
-font-weight: bold;
-}
-      
-.text-btn-stats {
-font-size : 20px;
-font-weight: bold;
+    background: green;
+    color: white;
 }
 
-@media (max-width:576px) {
-.stats .row [class*="col-"] {
-margin-top: 30px
+.btn-stats-icon {
+    font-size: 50px;
+    font-weight: bold;
 }
+
+.text-btn-stats {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .stats .row [class*="col-"] {
+        margin-top: 30px;
+    }
 }
 /* Fin - slider des statistiques de l'association */
-  
 
- 
 /* Début - page contact */
 
 .map-container-6 {
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
-  
+
 .map-container-6 iframe {
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .page-message-ok {
-min-height: 500px;
-display: flex;
-align-items: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
 }
-      
-.message-ok{
-font-size: 50px;
-font-weight: bold;
-color: green;
+
+.message-ok {
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
 }
 
 .message-ko {
-font-size: 50px;
-font-weight: bold;
-color: orange;
+    font-size: 50px;
+    font-weight: bold;
+    color: orange;
 }
 
 .icon-sucess {
-font-size: 100px;
-font-weight: bold;
-color: green;
+    font-size: 100px;
+    font-weight: bold;
+    color: green;
 }
-      
+
 .icon-error {
-font-size: 100px;
-font-weight: bold;
-color: orange;
+    font-size: 100px;
+    font-weight: bold;
+    color: orange;
 }
 
 .ressayer {
-font-size: 30px;
-color: orange;
-text-decoration: none;
-color: inherit;
+    font-size: 30px;
+    color: orange;
+    text-decoration: none;
+    color: inherit;
 }
 
 .ressayer:hover {
-color: green;
+    color: green;
 }
-  
-/* Fin - page contact */
 
-  
+/* Fin - page contact */
 
 /* Début - footer */
 
 footer {
-margin-top: 100px;
+    margin-top: 100px;
 }
 
 .footer-bar {
-color: white;
-background-color: green;
+    color: white;
+    background-color: green;
 }
 
 .text-footer {
-color: white;
+    color: white;
 }
 
 /* Fin - footer */
 
-  
+.article-type {
+    /* Article type - lorem ipsum*/
+    position: reative;
+    margin-top: 50px;
+    width: 100%;
+}
 
-.article-type { /* Article type - lorem ipsum*/
-position: reative;
-margin-top: 50px;
-width: 100%;
-}     
-
-.icons-sm { /* couleurs icones page contact + events*/
-color: green;
+.icons-sm {
+    /* couleurs icones page contact + events*/
+    color: green;
 }
